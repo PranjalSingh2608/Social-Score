@@ -126,6 +126,16 @@ STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+    'rest_framework.permissions.AllowAny',
+    ],
+    "DEFAULT_PAGINATION_CLASS":"rest_framework.pagination.LimitOffsetPagination",
+    "PAGE_SIZE":10
+}
+
+
 SWAGGER_SETTINGS = {
     'DEFAULT_INFO': 'mysite.api.urls.swagger_info', 
     'USE_SESSION_AUTH': False,
