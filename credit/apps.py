@@ -14,3 +14,8 @@ class ModelConfig(AppConfig):
     with open(model_file_path, 'rb') as model_file:
         model = pickle.load(model_file)
 
+class HRModelConfig(AppConfig):
+    model_file_path = os.path.join(settings.MODEL, "hr.pkl")
+
+    with open(model_file_path, 'rb') as model_file:
+        model = pickle.load(model_file)
