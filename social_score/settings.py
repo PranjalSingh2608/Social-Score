@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a5$kj#ln4(r@*lr=#_q9(y%1x*)xua7dd#p6k^zb8(pdtju9-#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1','https://kavach-3igw.onrender.com/docs/','https://kavach-3igw.onrender.com/']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'credit',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
