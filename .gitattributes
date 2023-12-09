@@ -1,1 +1,2 @@
+social_score/ml/model/score_model.pkl filter=lfs diff=lfs merge=lfs -text
 *.pkl filter=lfs diff=lfs merge=lfs -text
