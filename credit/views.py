@@ -6,9 +6,7 @@ from .apps import HRModelConfig, ModelConfig
 from pydantic import BaseModel,ValidationError
 from drf_yasg.utils import swagger_auto_schema
 
-@swagger_auto_schema(
-    method='post',
-)
+
 
 class model_input(BaseModel):
 

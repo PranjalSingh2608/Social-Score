@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'credit',
-    'drf_yasg',
     'corsheaders',
 ]
 
@@ -141,9 +140,5 @@ REST_FRAMEWORK = {
 }
 
 
-SWAGGER_SETTINGS = {
-    'DEFAULT_INFO': 'mysite.api.urls.swagger_info', 
-    'USE_SESSION_AUTH': False,
-}
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
